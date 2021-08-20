@@ -32,6 +32,6 @@
 ```Python
 python punk.py
 ```
-查看当前目录，生成了一个 punk.png 文件
+查看当前目录，生成了一个 punk.png 头像。
 
 ## 
