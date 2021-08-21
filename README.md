@@ -1,3 +1,5 @@
+![punk](punk6895.png)
+
 # pixelpunks
 像素朋克，用代码生成像素头像，发挥创意，让头像飞起来
 
@@ -47,7 +49,7 @@ python punk.py
 请参考：
 
 - templete.py 中的 man
-- - stickers.py 中的 cigarette
+- stickers.py 中的 cigarette
 
 制作自己的素材，然后在 punk.py 中配置参数，生成自己的像素头像。
 
