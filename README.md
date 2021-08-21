@@ -10,7 +10,7 @@
 详情请见：
 
 - https://www.36kr.com/p/1339722275117312
-- https://zhuanlan.zhihu.com/p/350919003?utm_oi=1309951489352495104
+- https://zhuanlan.zhihu.com/p/350919003
 - https://www.larvalabs.com/cryptopunks
 
 其中，最令我震惊的是：
