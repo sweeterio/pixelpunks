@@ -15,12 +15,21 @@ def download(name):
 
     return p
 
+
+def mkdir(dir):
+
+    path = Path(dir)
+    if not path.is_dir():
+        path.mkdir()
+
+
 def remove(p, name):
+
     data = [list(d) for d in p[2]]
     path = Path(name)
     asia  = Path('asia') / name
     other  = Path('other') / name
-    if data[-1][36:40] == [219, 177, 128, 255]:
+    if data[-1][36:40] == [219, 177, 128, 255]: # 判断是否是黄种人
         print(f'{name} -> asia')
         path.replace(asia)        
     else:
@@ -28,7 +37,10 @@ def remove(p, name):
 
 if __name__ == '__main__':
 
-    for i in range(0,10000):
+    mkdir('asia')  # 如果没有 asia 目录，则创建
+    mkdir('other') # 如果没有 other 目录，则创建
+
+    for i in range(0,10000):  # 下载从 0000 到 0009 的 punk
         name = f'punk{i:0=4d}.png'
-        p = download(name)
-        remove(p, name)
+        p = download(name) # 下载 punkxxxx.png
+        remove(p, name)    # 移动到对应目录
